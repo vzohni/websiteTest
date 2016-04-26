@@ -1,3 +1,4 @@
 markdown: redcarpet
 baseurl: /website
 exclude: ['README.md','LICENSE','params.json']
+highligher: rouge
