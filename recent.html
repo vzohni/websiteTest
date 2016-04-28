@@ -1,0 +1,14 @@
+---
+layout: news
+---
+
+<h1>Recent</h1>
+
+<ul>
+	{% for news in site.categories.recent limit: 2 %}
+	<li>
+		<a href="">{{news.title}}</a>
+		<p>{{news.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>

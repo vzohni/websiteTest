@@ -4,3 +4,25 @@ layout: default
 
 <h1>Victor's Website</h1>
 <p>This is a website made by Victor Zohni. It is the greatest website ever made.</p>
+
+<h2>Cool things!</h2>
+
+<ol>
+{% for cool-things in site.categories.cool-things %}
+	<li>
+	<a href="#">{{cool-things.title}}</a>
+	{{cool-things.content}}
+	</li>
+{% endfor %}
+</ol>
+
+<h2>Recent</h2>
+
+<ul>
+	{% for news in site.categories.recent limit: 2 %}
+	<li>
+		<a href="">{{news.title}}</a>
+		<p>{{news.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
