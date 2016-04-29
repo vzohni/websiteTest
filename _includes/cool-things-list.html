@@ -1,0 +1,12 @@
+
+<ul>
+	{% for cool-things in site.pages %}
+		{% if cool-things.type == include.type %}
+		<li>
+		<img src="{{site.baseurl}}/img/cool-things/{{cool-things.image}}" alt="Photo of {{cool-things.title}}">
+		{{cool-things.title}}
+		<p>{{cool-things.meta}}</p>
+		</li>
+		{% endif %}
+	{% endfor %}
+</ul>

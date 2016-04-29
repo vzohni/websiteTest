@@ -2,6 +2,6 @@
   		<ul class="nav {{include.navclass}}">
   			<li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
   			<li><a href="{{site.baseurl}}/news.html" class="{% if page.url contains 'news' or page.url contains 'recent' %}current{% endif %}">News</a></li>
-  			<li><a href="{{site.baseurl}}/planets">Cool Things!</a></li>
+  			<li><a href="{{site.baseurl}}/cool-things/" class="{% if page.url contains 'cool-things' %}current{% endif %}">Cool Things!</a></li>
   		</ul>
 </nav>

@@ -8,10 +8,10 @@ layout: default
 <h2>Cool things!</h2>
 
 <ol>
-{% for cool-things in site.categories.cool-things %}
+{% for cool-things in site.data.cool-things %}
 	<li>
 	<a href="#">{{cool-things.title}}</a>
-	{{cool-things.content}}
+	{{cool-things.content | markdownify  }}
 	</li>
 {% endfor %}
 </ol>
