@@ -1,4 +1,4 @@
 markdown: kramdown
-baseurl: /website
+baseurl: /websiteTest
 exclude: ['README.md','LICENSE','params.json']
 highligher: rouge
